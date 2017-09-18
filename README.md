@@ -6,6 +6,7 @@
 ### Descripción
 Desarrollo de la práctica de software colaborativo.
 
+
 ### Arquitecto
 Raquel Serrano 
 

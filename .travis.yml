@@ -12,3 +12,8 @@ notifications:
 script:
 #Test unitario y de integracion en develop
 - mvn verify --settings settings.xml
+- mvn clean org.jacoco:jacoco-maven-plugin:prepare-agent verify --settings settings.xml
+- mvn sonar:sonar \
+  -Dsonar.organization=raquelsr-github \
+  -Dsonar.host.url=https://sonarcloud.io \
+  -Dsonar.login=bdb50be6bb3c212f2735c8cc04909d727ae6f3a6 --settings settings.xml
