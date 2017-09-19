@@ -12,6 +12,12 @@ public class PointTest {
     public void before() {
         pt = new Point(2, 3);
     }
+    
+    @Test
+    public void testSumaResta() {
+        assertEquals(7, pt.sumaResta().getX());
+        assertEquals(-2, pt.sumaResta().getY());
+    }
 
     @Test
     public void testPuntoIntInt() {
@@ -49,5 +55,6 @@ public class PointTest {
         assertEquals(1, pt.getX());
         assertEquals(2, pt.getY());
     }
+    
 
 }
