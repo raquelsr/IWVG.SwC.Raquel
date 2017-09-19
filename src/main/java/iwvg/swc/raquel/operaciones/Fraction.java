@@ -53,5 +53,13 @@ public class Fraction {
     public int getDenominator() {
         return denominator;
     }
+    
+    public int getMayor() {
+        int max = this.getNumerator();
+        if (max < this.getDenominator()) {
+            max = this.getDenominator();
+        }
+        return max;
+    }
 
 }
