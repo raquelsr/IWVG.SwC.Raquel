@@ -11,7 +11,7 @@ public class UserTest {
     
     @Before
     public void before() {
-       u = new User(1,"Raquel","Serrano");
+       u = new User(1,"Raquel","Serrano", 18);
     }
 
     @Test
@@ -19,8 +19,14 @@ public class UserTest {
       assertEquals(1, u.getNumber());
       assertEquals("Raquel", u.getName());
       assertEquals("Serrano" , u.getFamilyName());
+      assertEquals(18 , u.getEdad());
     }
 
+    @Test
+    public void testGetEdad() {
+        assertEquals(18 , u.getEdad());
+    }
+    
     @Test
     public void testFullName() {
        assertEquals("Raquel Serrano", u.fullName());
