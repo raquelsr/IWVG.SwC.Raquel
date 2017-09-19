@@ -11,7 +11,7 @@ public class FractionTest {
     
     @Before
     public void before() {
-        f = new Fraction (4,2);     
+        f = new Fraction (4,2);  
     }
     
     @Test
@@ -45,6 +45,8 @@ public class FractionTest {
     @Test
     public void testGetMayor() {
         assertEquals(4, f.getMayor());
+        Fraction f2 = new Fraction (3,8); 
+        assertEquals(8, f2.getMayor());
     }
 
 }
