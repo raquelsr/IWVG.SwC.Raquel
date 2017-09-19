@@ -6,6 +6,8 @@
 ### Descripción
 Desarrollo de la práctica de software colaborativo.
 
+[![Build Status](https://travis-ci.org/raquelsr/IWVG.SwC.Raquel.svg?branch=master)](https://travis-ci.org/raquelsr/IWVG.SwC.Raquel)
+
 
 ### Arquitecto
 Raquel Serrano 
