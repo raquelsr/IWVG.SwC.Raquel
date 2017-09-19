@@ -19,6 +19,10 @@ public class Point {
         this(0, 0);
     }
 
+    public Point sumaResta() {
+        return new Point (this.getX()+5, this.getY()-5);
+    }
+    
     public double module() {
         return Math.sqrt((double)this.x * this.x + this.y * this.y);
     }
