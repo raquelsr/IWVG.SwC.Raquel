@@ -41,5 +41,10 @@ public class FractionTest {
     public void testGetDenominador() {
         assertEquals(2, f.getDenominator());
     }
+    
+    @Test
+    public void testGetMayor() {
+        assertEquals(4, f.getMayor());
+    }
 
 }
