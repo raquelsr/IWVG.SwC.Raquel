@@ -7,11 +7,14 @@ public class User {
     private String name;
 
     private String familyName;
+    
+    private int edad;
 
-    public User(int number, String name, String familyName) {
+    public User(int number, String name, String familyName, int edad) {
         this.number = number;
         this.name = this.format(name);
         this.familyName = this.format(familyName);
+        this.edad = edad;
     }
 
     private String format(String string) {
@@ -36,6 +39,10 @@ public class User {
 
     public String getFamilyName() {
         return this.familyName;
+    }
+    
+    public int getEdad() {
+        return this.edad;
     }
 
 }
