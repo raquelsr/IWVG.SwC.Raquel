@@ -54,5 +54,10 @@ public class DecimalCollectionTest {
 		exception.expect(ArithmeticException.class);
 		new DecimalCollection().higher();
 	}
+	
+	@Test
+    public void testMedia() {
+	    assertEquals(1.5, this.decimalCollection.media(), 10e-5);
+    }
 
 }
