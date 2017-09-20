@@ -65,5 +65,9 @@ public class Fraction {
     public void sumFiveToNumerator() {
         this.numerator = numerator + 5;
     }
+    
+    public double divide(Fraction f1, Fraction f2) {
+        return (double) (f1.numerator * f2.denominator) / (f1.denominator * f2.numerator);
+    }
 
 }
