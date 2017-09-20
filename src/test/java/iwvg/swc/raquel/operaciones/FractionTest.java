@@ -54,5 +54,12 @@ public class FractionTest {
         f.sumFiveToNumerator();
         assertEquals(9, f.getNumerator());
     }
+    
+    @Test
+    public void testDivide() {
+        Fraction f1 = new Fraction (4,2); 
+        Fraction f2 = new Fraction (8,2); 
+        assertEquals(0.5, f.divide(f1,f2), 10e-5);
+    }
 
 }
