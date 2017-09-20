@@ -61,5 +61,9 @@ public class Fraction {
         }
         return max;
     }
+    
+    public void sumFiveToNumerator() {
+        this.numerator = numerator + 5;
+    }
 
 }

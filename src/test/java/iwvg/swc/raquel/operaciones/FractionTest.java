@@ -48,5 +48,11 @@ public class FractionTest {
         Fraction f2 = new Fraction (3,8); 
         assertEquals(8, f2.getMayor());
     }
+    
+    @Test
+    public void testSumFiveToNumerator() {
+        f.sumFiveToNumerator();
+        assertEquals(9, f.getNumerator());
+    }
 
 }
